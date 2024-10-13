@@ -1,0 +1,394 @@
+[2024-10-08T23:27:08.684+0000] {processor.py:161} INFO - Started process (PID=344) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:27:08.688+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:27:08.695+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:27:08.692+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:27:12.841+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:27:13.883+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:27:13.879+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:mlflow_experiment_dag
+[2024-10-08T23:27:13.890+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:27:13.890+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:mlflow_experiment_dag
+[2024-10-08T23:27:13.894+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:27:13.894+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:mlflow_experiment_dag
+[2024-10-08T23:27:13.895+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:27:13.894+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:27:13.920+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:27:13.920+0000] {dag.py:3111} INFO - Creating ORM DAG for mlflow_experiment_dag
+[2024-10-08T23:27:14.337+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:27:14.337+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-07 00:00:00+00:00, run_after=2024-10-08 00:00:00+00:00
+[2024-10-08T23:27:14.362+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 5.699 seconds
+[2024-10-08T23:27:16.512+0000] {processor.py:161} INFO - Started process (PID=357) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:27:16.515+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:27:16.524+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:27:16.523+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:27:21.545+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:27:21.608+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:27:21.607+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:27:21.654+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:27:21.653+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-07 00:00:00+00:00, run_after=2024-10-08 00:00:00+00:00
+[2024-10-08T23:27:21.703+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 5.219 seconds
+[2024-10-08T23:27:52.214+0000] {processor.py:161} INFO - Started process (PID=370) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:27:52.216+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:27:52.219+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:27:52.218+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:27:53.719+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:27:53.792+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:27:53.791+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:27:53.833+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:27:53.833+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-07 00:00:00+00:00, run_after=2024-10-08 00:00:00+00:00
+[2024-10-08T23:27:53.899+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 1.695 seconds
+[2024-10-08T23:29:02.146+0000] {processor.py:161} INFO - Started process (PID=388) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:29:02.165+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:29:02.196+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:29:02.188+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:29:09.126+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:29:09.402+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:29:09.397+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:29:09.539+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:29:09.537+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:29:11.095+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 44.429 seconds
+[2024-10-08T23:29:41.675+0000] {processor.py:161} INFO - Started process (PID=407) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:29:41.677+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:29:41.682+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:29:41.680+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:29:44.645+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:29:44.740+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:29:44.736+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:29:45.777+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:29:45.760+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:29:45.872+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 4.228 seconds
+[2024-10-08T23:30:16.246+0000] {processor.py:161} INFO - Started process (PID=420) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:30:16.248+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:30:16.253+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:30:16.252+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:30:19.161+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:30:19.264+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:30:19.262+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:30:19.286+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:30:19.285+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:30:19.298+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 3.076 seconds
+[2024-10-08T23:30:49.605+0000] {processor.py:161} INFO - Started process (PID=433) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:30:49.607+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:30:49.610+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:30:49.609+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:30:51.981+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:30:52.462+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:30:52.459+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:30:53.436+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:30:53.432+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:30:54.264+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 4.674 seconds
+[2024-10-08T23:31:24.561+0000] {processor.py:161} INFO - Started process (PID=446) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:31:24.572+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:31:24.577+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:31:24.575+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:31:27.598+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:31:27.818+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:31:27.799+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:31:27.939+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:31:27.928+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:31:27.969+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 3.433 seconds
+[2024-10-08T23:31:58.333+0000] {processor.py:161} INFO - Started process (PID=458) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:31:58.336+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:31:58.344+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:31:58.341+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:32:56.669+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:32:29.413+0000] {timeout.py:68} ERROR - Process timed out, PID: 458
+[2024-10-08T23:33:28.341+0000] {processor.py:161} INFO - Started process (PID=476) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:33:28.346+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:33:28.352+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:33:28.351+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:33:31.480+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:33:31.613+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:33:31.607+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:33:31.645+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:33:31.645+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:33:31.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 3.339 seconds
+[2024-10-08T23:34:02.024+0000] {processor.py:161} INFO - Started process (PID=489) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:34:02.029+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:34:02.037+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:34:02.035+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:34:33.483+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:34:32.318+0000] {timeout.py:68} ERROR - Process timed out, PID: 489
+[2024-10-08T23:35:05.046+0000] {processor.py:161} INFO - Started process (PID=512) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:35:05.052+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:35:05.062+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:35:05.060+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:35:07.724+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:35:07.921+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:35:07.918+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:35:07.938+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:35:07.938+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:35:08.084+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 3.085 seconds
+[2024-10-08T23:35:38.535+0000] {processor.py:161} INFO - Started process (PID=525) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:35:38.539+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:35:38.542+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:35:38.541+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:35:41.878+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:35:41.984+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:35:41.982+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:35:42.335+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:35:42.335+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:35:42.352+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 3.844 seconds
+[2024-10-08T23:35:50.696+0000] {processor.py:161} INFO - Started process (PID=532) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:35:50.700+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:35:50.702+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:35:50.701+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:35:53.771+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:35:53.891+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:35:53.888+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:35:54.243+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:35:54.242+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:35:54.260+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 3.589 seconds
+[2024-10-08T23:35:57.992+0000] {processor.py:161} INFO - Started process (PID=539) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:35:57.997+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:35:58.001+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:35:58.000+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:36:01.009+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:36:01.147+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:36:01.144+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:36:01.307+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:36:01.306+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:36:01.352+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 3.439 seconds
+[2024-10-08T23:36:31.855+0000] {processor.py:161} INFO - Started process (PID=551) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:36:31.859+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:36:31.865+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:36:31.862+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:37:01.925+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:37:01.864+0000] {timeout.py:68} ERROR - Process timed out, PID: 551
+[2024-10-08T23:37:32.382+0000] {processor.py:161} INFO - Started process (PID=567) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:37:32.386+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:37:32.391+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:37:32.389+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:37:35.990+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:37:36.034+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:37:36.033+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:37:36.051+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:37:36.051+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:37:36.065+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 3.732 seconds
+[2024-10-08T23:38:06.527+0000] {processor.py:161} INFO - Started process (PID=590) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:38:06.530+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:38:06.532+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:38:06.531+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:38:08.719+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:38:08.880+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:38:08.875+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:38:08.928+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:38:08.928+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:38:10.327+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 3.817 seconds
+[2024-10-08T23:38:40.930+0000] {processor.py:161} INFO - Started process (PID=603) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:38:40.933+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:38:40.937+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:38:40.935+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:38:44.394+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:38:44.622+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:38:44.616+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:38:44.663+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:38:44.662+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:38:44.700+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 3.804 seconds
+[2024-10-08T23:39:15.455+0000] {processor.py:161} INFO - Started process (PID=615) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:39:15.458+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:39:15.460+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:39:15.459+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:39:17.933+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:39:18.053+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:39:18.049+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:39:18.079+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:39:18.078+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:39:18.095+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 2.661 seconds
+[2024-10-08T23:39:48.585+0000] {processor.py:161} INFO - Started process (PID=628) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:39:48.588+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:39:48.591+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:39:48.590+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:39:51.704+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:39:51.901+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:39:51.895+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:39:51.949+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:39:51.948+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:39:51.968+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 3.399 seconds
+[2024-10-08T23:40:22.451+0000] {processor.py:161} INFO - Started process (PID=641) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:40:22.454+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:40:22.456+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:40:22.455+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:40:25.950+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:40:26.165+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:40:26.159+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:40:26.267+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:40:26.266+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:40:27.310+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 4.874 seconds
+[2024-10-08T23:40:57.910+0000] {processor.py:161} INFO - Started process (PID=653) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:40:57.927+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:40:57.931+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:40:57.930+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:41:00.927+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:41:01.062+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:41:01.059+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:41:01.094+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:41:01.093+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:41:01.112+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 3.235 seconds
+[2024-10-08T23:41:31.336+0000] {processor.py:161} INFO - Started process (PID=666) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:41:31.339+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:41:31.341+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:41:31.340+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:41:35.124+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:41:35.273+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:41:35.270+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:41:35.309+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:41:35.308+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:41:35.332+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 4.015 seconds
+[2024-10-08T23:41:55.814+0000] {processor.py:161} INFO - Started process (PID=679) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:41:55.817+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:41:55.819+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:41:55.818+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:42:01.028+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:42:01.184+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:42:01.173+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:42:01.272+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:42:01.271+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:42:01.317+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 5.537 seconds
+[2024-10-08T23:42:32.542+0000] {processor.py:161} INFO - Started process (PID=692) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:42:32.546+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:42:32.549+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:42:32.547+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:42:37.222+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:42:37.967+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:42:37.958+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:42:38.035+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:42:38.032+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:42:39.199+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 6.702 seconds
+[2024-10-08T23:43:26.033+0000] {processor.py:161} INFO - Started process (PID=717) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:43:26.037+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:43:26.048+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:43:26.045+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:43:32.696+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:43:32.744+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:43:32.743+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:43:32.770+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:43:32.770+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:43:32.960+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 6.975 seconds
+[2024-10-08T23:44:03.059+0000] {processor.py:161} INFO - Started process (PID=733) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:44:03.062+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:44:03.064+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:44:03.063+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:44:04.674+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:44:04.732+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:44:04.731+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:44:04.755+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:44:04.755+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:44:04.776+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 1.742 seconds
+[2024-10-08T23:44:35.048+0000] {processor.py:161} INFO - Started process (PID=745) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:44:35.053+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:44:35.055+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:44:35.054+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:44:36.591+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:44:36.618+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:44:36.616+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:44:36.658+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:44:36.657+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:44:36.707+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 1.675 seconds
+[2024-10-08T23:45:07.138+0000] {processor.py:161} INFO - Started process (PID=758) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:45:07.142+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:45:07.147+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:45:07.145+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:45:08.774+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:45:08.799+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:45:08.799+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:45:08.821+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:45:08.821+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:45:08.833+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 1.720 seconds
+[2024-10-08T23:45:39.181+0000] {processor.py:161} INFO - Started process (PID=771) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:45:39.184+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:45:39.185+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:45:39.185+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:45:40.636+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:45:40.676+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:45:40.675+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:45:40.693+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:45:40.693+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:45:40.709+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 1.542 seconds
+[2024-10-08T23:46:11.076+0000] {processor.py:161} INFO - Started process (PID=784) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:46:11.079+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:46:11.081+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:46:11.080+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:46:12.722+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:46:12.765+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:46:12.764+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:46:12.786+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:46:12.786+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:46:12.974+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 1.910 seconds
+[2024-10-08T23:46:43.450+0000] {processor.py:161} INFO - Started process (PID=796) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:46:43.455+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:46:43.457+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:46:43.456+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:46:45.199+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:46:45.237+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:46:45.236+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:46:45.256+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:46:45.255+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:46:45.270+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 1.837 seconds
+[2024-10-08T23:47:15.732+0000] {processor.py:161} INFO - Started process (PID=809) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:47:15.737+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:47:15.739+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:47:15.738+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:47:17.459+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:47:17.496+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:47:17.494+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:47:17.512+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:47:17.512+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:47:17.524+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 1.811 seconds
+[2024-10-08T23:47:47.931+0000] {processor.py:161} INFO - Started process (PID=822) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:47:47.935+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:47:47.939+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:47:47.937+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:47:49.493+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:47:49.541+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:47:49.540+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:47:49.558+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:47:49.558+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:47:49.573+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 1.679 seconds
+[2024-10-08T23:48:19.729+0000] {processor.py:161} INFO - Started process (PID=835) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:48:19.731+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:48:19.733+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:48:19.732+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:48:21.323+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:48:21.354+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:48:21.354+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:48:21.372+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:48:21.372+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:48:21.388+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 1.669 seconds
+[2024-10-08T23:48:51.854+0000] {processor.py:161} INFO - Started process (PID=856) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:48:51.859+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:48:51.863+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:48:51.861+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:48:54.067+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:48:54.125+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:48:54.124+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:48:54.145+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:48:54.145+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:48:54.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 2.558 seconds
+[2024-10-08T23:49:24.654+0000] {processor.py:161} INFO - Started process (PID=869) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:49:24.657+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:49:24.658+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:49:24.657+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:49:26.405+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:49:26.441+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:49:26.441+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:49:26.459+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:49:26.458+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:49:26.471+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 1.829 seconds
+[2024-10-08T23:49:56.885+0000] {processor.py:161} INFO - Started process (PID=882) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:49:56.888+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:49:56.890+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:49:56.888+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:49:58.568+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:49:58.593+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:49:58.592+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:49:58.616+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:49:58.616+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:49:58.628+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 1.753 seconds
+[2024-10-08T23:50:28.976+0000] {processor.py:161} INFO - Started process (PID=900) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:50:28.980+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:50:28.981+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:50:28.981+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:50:30.584+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:50:30.625+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:50:30.624+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:50:30.643+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:50:30.643+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:50:30.656+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 1.692 seconds
+[2024-10-08T23:51:01.081+0000] {processor.py:161} INFO - Started process (PID=913) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:51:01.083+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:51:01.084+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:51:01.084+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:51:03.430+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:51:03.501+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:51:03.500+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:51:03.523+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:51:03.522+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:51:03.557+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 2.485 seconds
+[2024-10-08T23:51:34.383+0000] {processor.py:161} INFO - Started process (PID=934) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:51:34.386+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:51:34.389+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:51:34.387+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:51:38.628+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:51:38.719+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:51:38.717+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:51:38.938+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:51:38.937+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:51:38.951+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 4.607 seconds
+[2024-10-08T23:52:09.382+0000] {processor.py:161} INFO - Started process (PID=947) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:52:09.397+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:52:09.401+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:52:09.400+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:52:12.203+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:52:12.338+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:52:12.335+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:52:12.361+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:52:12.361+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:52:12.376+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 3.013 seconds
+[2024-10-08T23:52:42.936+0000] {processor.py:161} INFO - Started process (PID=960) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:52:42.940+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:52:42.941+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:52:42.941+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:52:45.424+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:52:45.557+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:52:45.552+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:52:45.579+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:52:45.579+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:52:45.597+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 2.694 seconds
+[2024-10-08T23:53:16.067+0000] {processor.py:161} INFO - Started process (PID=972) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:53:16.069+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:53:16.071+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:53:16.070+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:53:18.403+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:53:18.491+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:53:18.489+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:53:18.509+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:53:18.508+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:53:18.523+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 2.471 seconds
+[2024-10-08T23:53:48.883+0000] {processor.py:161} INFO - Started process (PID=985) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:53:48.886+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:53:48.888+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:53:48.887+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:53:51.158+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:53:51.319+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:53:51.316+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:53:51.355+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:53:51.355+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:53:51.592+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 2.725 seconds
+[2024-10-08T23:54:22.002+0000] {processor.py:161} INFO - Started process (PID=998) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:54:22.005+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:54:22.006+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:54:22.006+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:54:24.355+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:54:24.432+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:54:24.430+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:54:24.577+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:54:24.577+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:54:24.588+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 2.603 seconds
+[2024-10-08T23:54:55.177+0000] {processor.py:161} INFO - Started process (PID=1010) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:54:55.180+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:54:55.181+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:54:55.181+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:54:57.689+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:54:57.780+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:54:57.778+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:54:57.799+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:54:57.799+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:54:57.814+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 2.653 seconds
+[2024-10-08T23:55:28.225+0000] {processor.py:161} INFO - Started process (PID=1023) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:55:28.227+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:55:28.228+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:55:28.227+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:55:30.779+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:55:30.866+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:55:30.864+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:55:30.887+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:55:30.887+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:55:30.901+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 2.703 seconds
+[2024-10-08T23:56:01.244+0000] {processor.py:161} INFO - Started process (PID=1041) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:56:01.257+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:56:01.260+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:56:01.259+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:56:03.480+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:56:03.559+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:56:03.555+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:56:03.578+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:56:03.578+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:56:03.593+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 2.369 seconds
+[2024-10-08T23:56:34.125+0000] {processor.py:161} INFO - Started process (PID=1062) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:56:34.130+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:56:34.132+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:56:34.131+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:56:36.398+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:56:36.443+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:56:36.443+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:56:36.461+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:56:36.461+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:56:36.611+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 2.525 seconds
+[2024-10-08T23:57:06.990+0000] {processor.py:161} INFO - Started process (PID=1075) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:57:06.996+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:57:07.000+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:57:06.998+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:57:08.699+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:57:08.729+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:57:08.729+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:57:08.855+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:57:08.855+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:57:08.867+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 1.894 seconds
+[2024-10-08T23:57:39.316+0000] {processor.py:161} INFO - Started process (PID=1088) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:57:39.322+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:57:39.324+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:57:39.323+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:57:41.038+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:57:41.074+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:57:41.072+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:57:41.094+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:57:41.094+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:57:41.108+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 1.823 seconds
+[2024-10-08T23:58:11.576+0000] {processor.py:161} INFO - Started process (PID=1101) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:58:11.580+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:58:11.581+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:58:11.581+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:58:13.412+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:58:13.442+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:58:13.442+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:58:13.458+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:58:13.458+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:58:13.470+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 1.926 seconds
+[2024-10-08T23:58:43.902+0000] {processor.py:161} INFO - Started process (PID=1114) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:58:43.904+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:58:43.905+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:58:43.905+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:58:45.465+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:58:45.494+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:58:45.494+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:58:45.512+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:58:45.512+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:58:45.525+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 1.634 seconds
+[2024-10-08T23:59:07.844+0000] {processor.py:161} INFO - Started process (PID=1126) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:59:07.847+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:59:07.850+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:59:07.849+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:59:11.623+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:59:11.753+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:59:11.750+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:59:11.824+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:59:11.823+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:59:12.739+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 4.939 seconds
+[2024-10-08T23:59:43.258+0000] {processor.py:161} INFO - Started process (PID=1139) to work on /opt/airflow/dags/HW2.py
+[2024-10-08T23:59:43.398+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/HW2.py for tasks to queue
+[2024-10-08T23:59:43.715+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:59:43.710+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/HW2.py
+[2024-10-08T23:59:46.502+0000] {processor.py:840} INFO - DAG(s) 'mlflow_experiment_dag' retrieved from /opt/airflow/dags/HW2.py
+[2024-10-08T23:59:46.622+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:59:46.618+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-08T23:59:47.607+0000] {logging_mixin.py:188} INFO - [2024-10-08T23:59:47.605+0000] {dag.py:3947} INFO - Setting next_dagrun for mlflow_experiment_dag to 2024-10-08 00:00:00+00:00, run_after=2024-10-09 00:00:00+00:00
+[2024-10-08T23:59:47.625+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/HW2.py took 4.426 seconds

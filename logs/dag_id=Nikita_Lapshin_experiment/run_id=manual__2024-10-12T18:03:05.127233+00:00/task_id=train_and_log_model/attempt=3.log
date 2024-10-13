@@ -1,0 +1,49 @@
+[2024-10-12T18:05:58.554+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-10-12T18:05:58.586+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Nikita_Lapshin_experiment.train_and_log_model manual__2024-10-12T18:03:05.127233+00:00 [queued]>
+[2024-10-12T18:05:58.593+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Nikita_Lapshin_experiment.train_and_log_model manual__2024-10-12T18:03:05.127233+00:00 [queued]>
+[2024-10-12T18:05:58.593+0000] {taskinstance.py:2306} INFO - Starting attempt 3 of 4
+[2024-10-12T18:05:58.604+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): train_and_log_model> on 2024-10-12 18:03:05.127233+00:00
+[2024-10-12T18:05:58.639+0000] {standard_task_runner.py:64} INFO - Started process 1946 to run task
+[2024-10-12T18:05:58.645+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Nikita_Lapshin_experiment', 'train_and_log_model', 'manual__2024-10-12T18:03:05.127233+00:00', '--job-id', '82', '--raw', '--subdir', 'DAGS_FOLDER/HW2.py', '--cfg-path', '/tmp/tmpi58gispy']
+[2024-10-12T18:05:58.658+0000] {standard_task_runner.py:91} INFO - Job 82: Subtask train_and_log_model
+[2024-10-12T18:05:58.721+0000] {task_command.py:426} INFO - Running <TaskInstance: Nikita_Lapshin_experiment.train_and_log_model manual__2024-10-12T18:03:05.127233+00:00 [running]> on host 8027b3e99bd6
+[2024-10-12T18:05:58.810+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Lapshin Nikita' AIRFLOW_CTX_DAG_ID='Nikita_Lapshin_experiment' AIRFLOW_CTX_TASK_ID='train_and_log_model' AIRFLOW_CTX_EXECUTION_DATE='2024-10-12T18:03:05.127233+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-12T18:03:05.127233+00:00'
+[2024-10-12T18:05:58.812+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-10-12T18:05:58.839+0000] {s3.py:1422} INFO - Downloading source S3 file from Bucket mlops-2 with path datasets/prepared_data.csv
+[2024-10-12T18:05:58.851+0000] {base.py:84} INFO - Using connection ID 's3_connection' for task execution.
+[2024-10-12T18:05:58.853+0000] {connection_wrapper.py:388} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-12T18:05:59.587+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-10-12T18:05:59.589+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/HW2.py", line 100, in train_and_log_model
+    mlflow.create_experiment(name=experiment_name, artifact_location=f's3://{BUCKET}')
+  File "/home/airflow/.local/lib/python3.10/site-packages/mlflow/tracking/fluent.py", line 1766, in create_experiment
+    return MlflowClient().create_experiment(name, artifact_location, tags)
+  File "/home/airflow/.local/lib/python3.10/site-packages/mlflow/tracking/client.py", line 1294, in create_experiment
+    return self._tracking_client.create_experiment(name, artifact_location, tags)
+  File "/home/airflow/.local/lib/python3.10/site-packages/mlflow/tracking/_tracking_service/client.py", line 501, in create_experiment
+    return self.store.create_experiment(
+  File "/home/airflow/.local/lib/python3.10/site-packages/mlflow/store/tracking/rest_store.py", line 122, in create_experiment
+    response_proto = self._call_endpoint(CreateExperiment, req_body)
+  File "/home/airflow/.local/lib/python3.10/site-packages/mlflow/store/tracking/rest_store.py", line 81, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "/home/airflow/.local/lib/python3.10/site-packages/mlflow/utils/rest_utils.py", line 362, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "/home/airflow/.local/lib/python3.10/site-packages/mlflow/utils/rest_utils.py", line 232, in verify_rest_response
+    raise RestException(json.loads(response.text))
+mlflow.exceptions.RestException: RESOURCE_ALREADY_EXISTS: Experiment 'Lapshin-Nikita' already exists.
+[2024-10-12T18:05:59.609+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=Nikita_Lapshin_experiment, task_id=train_and_log_model, run_id=manual__2024-10-12T18:03:05.127233+00:00, execution_date=20241012T180305, start_date=20241012T180558, end_date=20241012T180559
+[2024-10-12T18:05:59.624+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 82 for task train_and_log_model (RESOURCE_ALREADY_EXISTS: Experiment 'Lapshin-Nikita' already exists.; 1946)
+[2024-10-12T18:05:59.673+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-10-12T18:05:59.737+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-12T18:05:59.739+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

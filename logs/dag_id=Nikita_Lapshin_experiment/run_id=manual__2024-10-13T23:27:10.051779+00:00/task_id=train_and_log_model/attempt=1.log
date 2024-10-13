@@ -1,0 +1,68 @@
+[2024-10-13T23:27:36.026+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-10-13T23:27:36.056+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Nikita_Lapshin_experiment.train_and_log_model manual__2024-10-13T23:27:10.051779+00:00 [queued]>
+[2024-10-13T23:27:36.069+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Nikita_Lapshin_experiment.train_and_log_model manual__2024-10-13T23:27:10.051779+00:00 [queued]>
+[2024-10-13T23:27:36.070+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 4
+[2024-10-13T23:27:36.088+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): train_and_log_model> on 2024-10-13 23:27:10.051779+00:00
+[2024-10-13T23:27:36.123+0000] {standard_task_runner.py:64} INFO - Started process 464 to run task
+[2024-10-13T23:27:36.136+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Nikita_Lapshin_experiment', 'train_and_log_model', 'manual__2024-10-13T23:27:10.051779+00:00', '--job-id', '133', '--raw', '--subdir', 'DAGS_FOLDER/HW2.py', '--cfg-path', '/tmp/tmpbxpw3km9']
+[2024-10-13T23:27:36.141+0000] {standard_task_runner.py:91} INFO - Job 133: Subtask train_and_log_model
+[2024-10-13T23:27:36.286+0000] {task_command.py:426} INFO - Running <TaskInstance: Nikita_Lapshin_experiment.train_and_log_model manual__2024-10-13T23:27:10.051779+00:00 [running]> on host e332dadfa0c1
+[2024-10-13T23:27:36.518+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Lapshin Nikita' AIRFLOW_CTX_DAG_ID='Nikita_Lapshin_experiment' AIRFLOW_CTX_TASK_ID='train_and_log_model' AIRFLOW_CTX_EXECUTION_DATE='2024-10-13T23:27:10.051779+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-13T23:27:10.051779+00:00'
+[2024-10-13T23:27:36.520+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-10-13T23:27:36.543+0000] {s3.py:1422} INFO - Downloading source S3 file from Bucket mlops-2 with path datasets/prepared_data.csv
+[2024-10-13T23:27:36.553+0000] {base.py:84} INFO - Using connection ID 's3_connection' for task execution.
+[2024-10-13T23:27:36.554+0000] {connection_wrapper.py:388} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-13T23:27:40.395+0000] {logging_mixin.py:188} INFO - result1
+[2024-10-13T23:27:40.594+0000] {logging_mixin.py:188} WARNING - 2024/10/13 23:27:40 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh(<full-path-to-git-executable>)
+
+All git commands will error until this is rectified.
+
+This initial message can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|silent|none|n|0: for no message or exception
+    - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+    - error|e|exception|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+[2024-10-13T23:28:00.130+0000] {logging_mixin.py:188} INFO - result2 random_forest
+[2024-10-13T23:28:10.481+0000] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2024-10-13T23:28:28.355+0000] {logging_mixin.py:188} WARNING - 2024/10/13 23:28:28 WARNING mlflow.models.model: Input example should be provided to infer model signature if the model signature is not provided when logging the model.
+[2024-10-13T23:28:34.146+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: storage.yandexcloud.net. Connection pool size: 10
+[2024-10-13T23:28:34.297+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: storage.yandexcloud.net. Connection pool size: 10
+[2024-10-13T23:28:34.398+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: storage.yandexcloud.net. Connection pool size: 10
+[2024-10-13T23:28:37.159+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: storage.yandexcloud.net. Connection pool size: 10
+[2024-10-13T23:28:38.158+0000] {logging_mixin.py:188} WARNING - 2024/10/13 23:28:38 INFO mlflow.data.evaluation_dataset: Cannot convert input data to `evaluate()` to an mlflow dataset, input must be a list, a numpy array, a panda Dataframe or a spark Dataframe, but received <class 'tuple'>.
+[2024-10-13T23:28:38.181+0000] {logging_mixin.py:188} WARNING - 2024/10/13 23:28:38 INFO mlflow.tracking._tracking_service.client: 🏃 View run random_forest_run at: http://mlflow-service:5000/#/experiments/889983933329739548/runs/4c081962cdd744a5819a3f3fab8da453.
+[2024-10-13T23:28:38.182+0000] {logging_mixin.py:188} WARNING - 2024/10/13 23:28:38 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://mlflow-service:5000/#/experiments/889983933329739548.
+[2024-10-13T23:28:38.209+0000] {logging_mixin.py:188} WARNING - 2024/10/13 23:28:38 INFO mlflow.tracking._tracking_service.client: 🏃 View run @GodSiemens at: http://mlflow-service:5000/#/experiments/889983933329739548/runs/6ad82efedac246f8a22ca4d59eea7535.
+[2024-10-13T23:28:38.209+0000] {logging_mixin.py:188} WARNING - 2024/10/13 23:28:38 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://mlflow-service:5000/#/experiments/889983933329739548.
+[2024-10-13T23:28:38.222+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-10-13T23:28:38.225+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/HW2.py", line 119, in train_and_log_model
+    eval_results = mlflow.evaluate(
+  File "/home/airflow/.local/lib/python3.10/site-packages/mlflow/models/evaluation/base.py", line 1598, in evaluate
+    dataset = EvaluationDataset(
+  File "/home/airflow/.local/lib/python3.10/site-packages/mlflow/data/evaluation_dataset.py", line 402, in __init__
+    raise MlflowException(
+mlflow.exceptions.MlflowException: The data argument must be a numpy array, a list or a Pandas DataFrame, or spark DataFrame if pyspark package installed.
+[2024-10-13T23:28:38.244+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=Nikita_Lapshin_experiment, task_id=train_and_log_model, run_id=manual__2024-10-13T23:27:10.051779+00:00, execution_date=20241013T232710, start_date=20241013T232736, end_date=20241013T232838
+[2024-10-13T23:28:38.264+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 133 for task train_and_log_model (The data argument must be a numpy array, a list or a Pandas DataFrame, or spark DataFrame if pyspark package installed.; 464)
+[2024-10-13T23:28:38.320+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-10-13T23:28:38.357+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-13T23:28:38.358+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

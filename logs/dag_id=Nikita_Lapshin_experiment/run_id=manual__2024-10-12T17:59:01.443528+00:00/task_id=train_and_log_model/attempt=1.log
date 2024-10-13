@@ -1,0 +1,35 @@
+[2024-10-12T17:59:18.884+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-10-12T17:59:18.896+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Nikita_Lapshin_experiment.train_and_log_model manual__2024-10-12T17:59:01.443528+00:00 [queued]>
+[2024-10-12T17:59:18.902+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Nikita_Lapshin_experiment.train_and_log_model manual__2024-10-12T17:59:01.443528+00:00 [queued]>
+[2024-10-12T17:59:18.902+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 4
+[2024-10-12T17:59:18.911+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): train_and_log_model> on 2024-10-12 17:59:01.443528+00:00
+[2024-10-12T17:59:18.926+0000] {standard_task_runner.py:64} INFO - Started process 1665 to run task
+[2024-10-12T17:59:18.930+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Nikita_Lapshin_experiment', 'train_and_log_model', 'manual__2024-10-12T17:59:01.443528+00:00', '--job-id', '73', '--raw', '--subdir', 'DAGS_FOLDER/HW2.py', '--cfg-path', '/tmp/tmpe6ctu3i0']
+[2024-10-12T17:59:18.933+0000] {standard_task_runner.py:91} INFO - Job 73: Subtask train_and_log_model
+[2024-10-12T17:59:18.985+0000] {task_command.py:426} INFO - Running <TaskInstance: Nikita_Lapshin_experiment.train_and_log_model manual__2024-10-12T17:59:01.443528+00:00 [running]> on host 8027b3e99bd6
+[2024-10-12T17:59:19.043+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Lapshin Nikita' AIRFLOW_CTX_DAG_ID='Nikita_Lapshin_experiment' AIRFLOW_CTX_TASK_ID='train_and_log_model' AIRFLOW_CTX_EXECUTION_DATE='2024-10-12T17:59:01.443528+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-12T17:59:01.443528+00:00'
+[2024-10-12T17:59:19.119+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-10-12T17:59:19.145+0000] {s3.py:1422} INFO - Downloading source S3 file from Bucket mlops-2 with path datasets/prepared_data.csv
+[2024-10-12T17:59:19.159+0000] {base.py:84} INFO - Using connection ID 's3_connection' for task execution.
+[2024-10-12T17:59:19.160+0000] {connection_wrapper.py:388} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-12T17:59:19.606+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-10-12T17:59:19.607+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/HW2.py", line 100, in train_and_log_model
+    mlflow.set_experiment(experiment_name, artifact_location=f's3://{BUCKET}')
+TypeError: set_experiment() got an unexpected keyword argument 'artifact_location'
+[2024-10-12T17:59:19.616+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=Nikita_Lapshin_experiment, task_id=train_and_log_model, run_id=manual__2024-10-12T17:59:01.443528+00:00, execution_date=20241012T175901, start_date=20241012T175918, end_date=20241012T175919
+[2024-10-12T17:59:19.626+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 73 for task train_and_log_model (set_experiment() got an unexpected keyword argument 'artifact_location'; 1665)
+[2024-10-12T17:59:19.649+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-10-12T17:59:19.845+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-12T17:59:19.853+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

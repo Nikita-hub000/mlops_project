@@ -1,0 +1,20 @@
+[2024-10-13T02:24:25.176+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-10-13T02:24:25.203+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Nikita_Lapshin_experiment.prepare_data scheduled__2024-10-12T01:00:00+00:00 [queued]>
+[2024-10-13T02:24:25.214+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Nikita_Lapshin_experiment.prepare_data scheduled__2024-10-12T01:00:00+00:00 [queued]>
+[2024-10-13T02:24:25.214+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 4
+[2024-10-13T02:24:25.233+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): prepare_data> on 2024-10-12 01:00:00+00:00
+[2024-10-13T02:24:25.266+0000] {standard_task_runner.py:64} INFO - Started process 5871 to run task
+[2024-10-13T02:24:25.276+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Nikita_Lapshin_experiment', 'prepare_data', 'scheduled__2024-10-12T01:00:00+00:00', '--job-id', '111', '--raw', '--subdir', 'DAGS_FOLDER/HW2.py', '--cfg-path', '/tmp/tmphtzmpucx']
+[2024-10-13T02:24:25.287+0000] {standard_task_runner.py:91} INFO - Job 111: Subtask prepare_data
+[2024-10-13T02:24:25.342+0000] {task_command.py:426} INFO - Running <TaskInstance: Nikita_Lapshin_experiment.prepare_data scheduled__2024-10-12T01:00:00+00:00 [running]> on host 56b144d03b9f
+[2024-10-13T02:24:25.512+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Lapshin Nikita' AIRFLOW_CTX_DAG_ID='Nikita_Lapshin_experiment' AIRFLOW_CTX_TASK_ID='prepare_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-12T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-12T01:00:00+00:00'
+[2024-10-13T02:24:25.516+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-10-13T02:24:25.542+0000] {s3.py:1422} INFO - Downloading source S3 file from Bucket mlops-2 with path datasets/california_housing.csv
+[2024-10-13T02:24:25.572+0000] {base.py:84} INFO - Using connection ID 's3_connection' for task execution.
+[2024-10-13T02:24:25.574+0000] {connection_wrapper.py:388} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-13T02:24:27.273+0000] {python.py:237} INFO - Done. Returned value was: {'start_time': 1728786266.2613285, 'end_time': 1728786266.2847838, 'features': ['Unnamed: 0', 'MedInc', 'HouseAge', 'AveRooms', 'AveBedrms', 'Population', 'AveOccup', 'Latitude']}
+[2024-10-13T02:24:27.278+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-10-13T02:24:27.345+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Nikita_Lapshin_experiment, task_id=prepare_data, run_id=scheduled__2024-10-12T01:00:00+00:00, execution_date=20241012T010000, start_date=20241013T022425, end_date=20241013T022427
+[2024-10-13T02:24:27.394+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-10-13T02:24:27.459+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-13T02:24:27.462+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

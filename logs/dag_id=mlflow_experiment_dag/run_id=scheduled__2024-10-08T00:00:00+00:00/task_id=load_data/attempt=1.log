@@ -1,0 +1,103 @@
+[2024-10-09T00:00:04.995+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-10-09T00:00:05.036+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mlflow_experiment_dag.load_data scheduled__2024-10-08T00:00:00+00:00 [queued]>
+[2024-10-09T00:00:05.045+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mlflow_experiment_dag.load_data scheduled__2024-10-08T00:00:00+00:00 [queued]>
+[2024-10-09T00:00:05.046+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-10-09T00:00:05.058+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_data> on 2024-10-08 00:00:00+00:00
+[2024-10-09T00:00:05.069+0000] {standard_task_runner.py:64} INFO - Started process 1155 to run task
+[2024-10-09T00:00:05.075+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'mlflow_experiment_dag', 'load_data', 'scheduled__2024-10-08T00:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/HW2.py', '--cfg-path', '/tmp/tmpvp_mepy3']
+[2024-10-09T00:00:05.078+0000] {standard_task_runner.py:91} INFO - Job 8: Subtask load_data
+[2024-10-09T00:00:05.142+0000] {task_command.py:426} INFO - Running <TaskInstance: mlflow_experiment_dag.load_data scheduled__2024-10-08T00:00:00+00:00 [running]> on host 8027b3e99bd6
+[2024-10-09T00:00:06.190+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nikita Lapshin' AIRFLOW_CTX_DAG_ID='mlflow_experiment_dag' AIRFLOW_CTX_TASK_ID='load_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-08T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-08T00:00:00+00:00'
+[2024-10-09T00:00:06.191+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-10-09T00:00:06.265+0000] {python.py:237} INFO - Done. Returned value was: {'X_train':        MedInc  HouseAge  AveRooms  ...  AveOccup  Latitude  Longitude
+14196  3.2596      33.0  5.017657  ...  3.691814     32.71    -117.03
+8267   3.8125      49.0  4.473545  ...  1.738095     33.77    -118.16
+17445  4.1563       4.0  5.645833  ...  2.723214     34.66    -120.48
+14265  1.9425      36.0  4.002817  ...  3.994366     32.69    -117.11
+2271   3.5542      43.0  6.268421  ...  2.300000     36.78    -119.80
+...       ...       ...       ...  ...       ...       ...        ...
+11284  6.3700      35.0  6.129032  ...  3.032258     33.78    -117.96
+11964  3.0500      33.0  6.868597  ...  3.904232     34.02    -117.43
+5390   2.9344      36.0  3.986717  ...  3.332068     34.03    -118.38
+860    5.7192      15.0  6.395349  ...  3.178891     37.58    -121.96
+15795  2.5755      52.0  3.402576  ...  2.108696     37.77    -122.42
+
+[16512 rows x 8 columns], 'X_test':        MedInc  HouseAge  AveRooms  ...  AveOccup  Latitude  Longitude
+20046  1.6812      25.0  4.192201  ...  3.877437     36.06    -119.01
+3024   2.5313      30.0  5.039384  ...  2.679795     35.14    -119.46
+15663  3.4801      52.0  3.977155  ...  1.360332     37.80    -122.44
+20484  5.7376      17.0  6.163636  ...  3.444444     34.28    -118.72
+9814   3.7250      34.0  5.492991  ...  2.483645     36.62    -121.93
+...       ...       ...       ...  ...       ...       ...        ...
+15362  4.6050      16.0  7.002212  ...  2.988938     33.36    -117.22
+16623  2.7266      28.0  6.131915  ...  2.340426     35.36    -120.83
+18086  9.2298      25.0  7.237676  ...  2.790493     37.31    -122.05
+2144   2.7850      36.0  5.289030  ...  2.588608     36.77    -119.76
+3665   3.5521      17.0  3.988839  ...  3.729911     34.22    -118.37
+
+[4128 rows x 8 columns], 'y_train': 14196    1.030
+8267     3.821
+17445    1.726
+14265    0.934
+2271     0.965
+         ...  
+11284    2.292
+11964    0.978
+5390     2.221
+860      2.835
+15795    3.250
+Name: MedHouseVal, Length: 16512, dtype: float64, 'y_test': 20046    0.47700
+3024     0.45800
+15663    5.00001
+20484    2.18600
+9814     2.78000
+          ...   
+15362    2.63300
+16623    2.66800
+18086    5.00001
+2144     0.72300
+3665     1.51500
+Name: MedHouseVal, Length: 4128, dtype: float64}
+[2024-10-09T00:00:06.288+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-10-09T00:00:06.438+0000] {xcom.py:675} ERROR - Object of type Series is not JSON serializable. If you are using pickle instead of JSON for XCom, then you need to enable pickle support for XCom in your *** config or make sure to decorate your object with attr.
+[2024-10-09T00:00:06.444+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/json.py", line 91, in default
+    return serialize(o)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/serialization/serde.py", line 189, in serialize
+    raise TypeError(f"cannot serialize object of type {cls}")
+TypeError: cannot serialize object of type <class 'pandas.core.series.Series'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 486, in _execute_task
+    task_instance.xcom_push(key=XCOM_RETURN_KEY, value=xcom_value, session=session)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3197, in xcom_push
+    XCom.set(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/xcom.py", line 246, in set
+    value = cls.serialize_value(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/xcom.py", line 673, in serialize_value
+    return json.dumps(value, cls=XComEncoder).encode("UTF-8")
+  File "/usr/local/lib/python3.10/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/json.py", line 104, in encode
+    return super().encode(o)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/json.py", line 93, in default
+    return super().default(o)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Series is not JSON serializable
+[2024-10-09T00:00:06.464+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=mlflow_experiment_dag, task_id=load_data, run_id=scheduled__2024-10-08T00:00:00+00:00, execution_date=20241008T000000, start_date=20241009T000005, end_date=20241009T000006
+[2024-10-09T00:00:06.482+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 8 for task load_data (Object of type Series is not JSON serializable; 1155)
+[2024-10-09T00:00:06.514+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-10-09T00:00:07.289+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-09T00:00:07.293+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,20 @@
+[2024-10-13T23:54:23.341+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-10-13T23:54:23.354+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Nikita_Lapshin_experiment.save_results manual__2024-10-13T23:52:02.748773+00:00 [queued]>
+[2024-10-13T23:54:23.360+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Nikita_Lapshin_experiment.save_results manual__2024-10-13T23:52:02.748773+00:00 [queued]>
+[2024-10-13T23:54:23.361+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 4
+[2024-10-13T23:54:23.372+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): save_results> on 2024-10-13 23:52:02.748773+00:00
+[2024-10-13T23:54:23.398+0000] {standard_task_runner.py:64} INFO - Started process 564 to run task
+[2024-10-13T23:54:23.404+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Nikita_Lapshin_experiment', 'save_results', 'manual__2024-10-13T23:52:02.748773+00:00', '--job-id', '155', '--raw', '--subdir', 'DAGS_FOLDER/HW2.py', '--cfg-path', '/tmp/tmpsu5fzycn']
+[2024-10-13T23:54:23.407+0000] {standard_task_runner.py:91} INFO - Job 155: Subtask save_results
+[2024-10-13T23:54:23.466+0000] {task_command.py:426} INFO - Running <TaskInstance: Nikita_Lapshin_experiment.save_results manual__2024-10-13T23:52:02.748773+00:00 [running]> on host 43effb7ea5a5
+[2024-10-13T23:54:23.533+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Lapshin Nikita' AIRFLOW_CTX_DAG_ID='Nikita_Lapshin_experiment' AIRFLOW_CTX_TASK_ID='save_results' AIRFLOW_CTX_EXECUTION_DATE='2024-10-13T23:52:02.748773+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-13T23:52:02.748773+00:00'
+[2024-10-13T23:54:23.535+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-10-13T23:54:23.564+0000] {base.py:84} INFO - Using connection ID 's3_connection' for task execution.
+[2024-10-13T23:54:23.564+0000] {connection_wrapper.py:388} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-13T23:54:24.372+0000] {logging_mixin.py:188} INFO - Results saved successfully!
+[2024-10-13T23:54:24.377+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-10-13T23:54:24.378+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-10-13T23:54:24.394+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Nikita_Lapshin_experiment, task_id=save_results, run_id=manual__2024-10-13T23:52:02.748773+00:00, execution_date=20241013T235202, start_date=20241013T235423, end_date=20241013T235424
+[2024-10-13T23:54:24.441+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-10-13T23:54:24.469+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-13T23:54:24.470+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

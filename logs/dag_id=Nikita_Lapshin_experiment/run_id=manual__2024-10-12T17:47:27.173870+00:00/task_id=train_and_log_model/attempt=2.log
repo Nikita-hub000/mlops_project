@@ -1,0 +1,109 @@
+[2024-10-12T17:49:48.650+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-10-12T17:49:48.681+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Nikita_Lapshin_experiment.train_and_log_model manual__2024-10-12T17:47:27.173870+00:00 [queued]>
+[2024-10-12T17:49:48.694+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Nikita_Lapshin_experiment.train_and_log_model manual__2024-10-12T17:47:27.173870+00:00 [queued]>
+[2024-10-12T17:49:48.695+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 4
+[2024-10-12T17:49:48.710+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): train_and_log_model> on 2024-10-12 17:47:27.173870+00:00
+[2024-10-12T17:49:48.740+0000] {standard_task_runner.py:64} INFO - Started process 1271 to run task
+[2024-10-12T17:49:48.747+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Nikita_Lapshin_experiment', 'train_and_log_model', 'manual__2024-10-12T17:47:27.173870+00:00', '--job-id', '65', '--raw', '--subdir', 'DAGS_FOLDER/HW2.py', '--cfg-path', '/tmp/tmp7m10xm3p']
+[2024-10-12T17:49:48.753+0000] {standard_task_runner.py:91} INFO - Job 65: Subtask train_and_log_model
+[2024-10-12T17:49:48.885+0000] {task_command.py:426} INFO - Running <TaskInstance: Nikita_Lapshin_experiment.train_and_log_model manual__2024-10-12T17:47:27.173870+00:00 [running]> on host 8027b3e99bd6
+[2024-10-12T17:49:49.067+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Lapshin Nikita' AIRFLOW_CTX_DAG_ID='Nikita_Lapshin_experiment' AIRFLOW_CTX_TASK_ID='train_and_log_model' AIRFLOW_CTX_EXECUTION_DATE='2024-10-12T17:47:27.173870+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-12T17:47:27.173870+00:00'
+[2024-10-12T17:49:49.075+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-10-12T17:49:49.113+0000] {s3.py:1422} INFO - Downloading source S3 file from Bucket mlops-2 with path datasets/prepared_data.csv
+[2024-10-12T17:49:49.129+0000] {base.py:84} INFO - Using connection ID 's3_connection' for task execution.
+[2024-10-12T17:49:49.131+0000] {connection_wrapper.py:388} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-12T17:49:50.255+0000] {logging_mixin.py:188} INFO - result1
+[2024-10-12T17:49:50.418+0000] {logging_mixin.py:188} WARNING - 2024/10/12 17:49:50 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh(<full-path-to-git-executable>)
+
+All git commands will error until this is rectified.
+
+This initial message can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|silent|none|n|0: for no message or exception
+    - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+    - error|e|exception|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+[2024-10-12T17:50:20.661+0000] {logging_mixin.py:188} INFO - result2 random_forest
+[2024-10-12T17:50:33.950+0000] {logging_mixin.py:188} WARNING - 2024/10/12 17:50:33 INFO mlflow.tracking._tracking_service.client: 🏃 View run random_forest_run at: http://mlflow-service:5000/#/experiments/993501074124898190/runs/de6983e120e04901af91372b5b92bc32.
+[2024-10-12T17:50:33.951+0000] {logging_mixin.py:188} WARNING - 2024/10/12 17:50:33 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://mlflow-service:5000/#/experiments/993501074124898190.
+[2024-10-12T17:50:34.009+0000] {logging_mixin.py:188} WARNING - 2024/10/12 17:50:34 INFO mlflow.tracking._tracking_service.client: 🏃 View run @GodSiemens at: http://mlflow-service:5000/#/experiments/993501074124898190/runs/6ab70f64e60d44db948cd3bb83087325.
+[2024-10-12T17:50:34.010+0000] {logging_mixin.py:188} WARNING - 2024/10/12 17:50:34 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://mlflow-service:5000/#/experiments/993501074124898190.
+[2024-10-12T17:50:34.015+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-10-12T17:50:34.018+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/HW2.py", line 111, in train_and_log_model
+    mlflow.sklearn.log_model(model, model_name)
+  File "/home/airflow/.local/lib/python3.10/site-packages/mlflow/sklearn/__init__.py", line 412, in log_model
+    return Model.log(
+  File "/home/airflow/.local/lib/python3.10/site-packages/mlflow/models/model.py", line 714, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path, run_id)
+  File "/home/airflow/.local/lib/python3.10/site-packages/mlflow/tracking/fluent.py", line 1147, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "/home/airflow/.local/lib/python3.10/site-packages/mlflow/tracking/client.py", line 1962, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "/home/airflow/.local/lib/python3.10/site-packages/mlflow/tracking/_tracking_service/client.py", line 843, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "/home/airflow/.local/lib/python3.10/site-packages/mlflow/store/artifact/s3_artifact_repo.py", line 194, in log_artifacts
+    self._upload_file(
+  File "/home/airflow/.local/lib/python3.10/site-packages/mlflow/store/artifact/s3_artifact_repo.py", line 169, in _upload_file
+    s3_client.upload_file(Filename=local_file, Bucket=bucket, Key=key, ExtraArgs=extra_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/boto3/s3/inject.py", line 145, in upload_file
+    return transfer.upload_file(
+  File "/home/airflow/.local/lib/python3.10/site-packages/boto3/s3/transfer.py", line 371, in upload_file
+    future.result()
+  File "/home/airflow/.local/lib/python3.10/site-packages/s3transfer/futures.py", line 103, in result
+    return self._coordinator.result()
+  File "/home/airflow/.local/lib/python3.10/site-packages/s3transfer/futures.py", line 266, in result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/s3transfer/tasks.py", line 139, in __call__
+    return self._execute_main(kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/s3transfer/tasks.py", line 162, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/s3transfer/upload.py", line 764, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/botocore/client.py", line 565, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/botocore/client.py", line 1001, in _make_api_call
+    http, parsed_response = self._make_request(
+  File "/home/airflow/.local/lib/python3.10/site-packages/botocore/client.py", line 1027, in _make_request
+    return self._endpoint.make_request(operation_model, request_dict)
+  File "/home/airflow/.local/lib/python3.10/site-packages/botocore/endpoint.py", line 119, in make_request
+    return self._send_request(request_dict, operation_model)
+  File "/home/airflow/.local/lib/python3.10/site-packages/botocore/endpoint.py", line 198, in _send_request
+    request = self.create_request(request_dict, operation_model)
+  File "/home/airflow/.local/lib/python3.10/site-packages/botocore/endpoint.py", line 134, in create_request
+    self._event_emitter.emit(
+  File "/home/airflow/.local/lib/python3.10/site-packages/botocore/hooks.py", line 412, in emit
+    return self._emitter.emit(aliased_event_name, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/botocore/hooks.py", line 256, in emit
+    return self._emit(event_name, kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/botocore/hooks.py", line 239, in _emit
+    response = handler(**kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/botocore/signers.py", line 105, in handler
+    return self.sign(operation_name, request)
+  File "/home/airflow/.local/lib/python3.10/site-packages/botocore/signers.py", line 199, in sign
+    auth.add_auth(request)
+  File "/home/airflow/.local/lib/python3.10/site-packages/botocore/auth.py", line 418, in add_auth
+    raise NoCredentialsError()
+botocore.exceptions.NoCredentialsError: Unable to locate credentials
+[2024-10-12T17:50:34.067+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=Nikita_Lapshin_experiment, task_id=train_and_log_model, run_id=manual__2024-10-12T17:47:27.173870+00:00, execution_date=20241012T174727, start_date=20241012T174948, end_date=20241012T175034
+[2024-10-12T17:50:34.084+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 65 for task train_and_log_model (Unable to locate credentials; 1271)
+[2024-10-12T17:50:34.140+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-10-12T17:50:34.227+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-12T17:50:34.228+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
