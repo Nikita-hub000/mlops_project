@@ -1,0 +1,20 @@
+[2024-10-24T20:42:33.143+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-10-24T20:42:33.167+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: lapshin_nikita_linear_regression.prepare_data manual__2024-10-24T20:42:14.357316+00:00 [queued]>
+[2024-10-24T20:42:33.174+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: lapshin_nikita_linear_regression.prepare_data manual__2024-10-24T20:42:14.357316+00:00 [queued]>
+[2024-10-24T20:42:33.174+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 4
+[2024-10-24T20:42:33.188+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): prepare_data> on 2024-10-24 20:42:14.357316+00:00
+[2024-10-24T20:42:33.222+0000] {standard_task_runner.py:64} INFO - Started process 1676 to run task
+[2024-10-24T20:42:33.227+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'lapshin_nikita_linear_regression', 'prepare_data', 'manual__2024-10-24T20:42:14.357316+00:00', '--job-id', '181', '--raw', '--subdir', 'DAGS_FOLDER/HW2.py', '--cfg-path', '/tmp/tmp4bnlpf6a']
+[2024-10-24T20:42:33.231+0000] {standard_task_runner.py:91} INFO - Job 181: Subtask prepare_data
+[2024-10-24T20:42:33.297+0000] {task_command.py:426} INFO - Running <TaskInstance: lapshin_nikita_linear_regression.prepare_data manual__2024-10-24T20:42:14.357316+00:00 [running]> on host 701639cb5e9f
+[2024-10-24T20:42:33.410+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Elizaveta Gavrilova' AIRFLOW_CTX_DAG_ID='lapshin_nikita_linear_regression' AIRFLOW_CTX_TASK_ID='prepare_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-24T20:42:14.357316+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-24T20:42:14.357316+00:00'
+[2024-10-24T20:42:33.415+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-10-24T20:42:33.447+0000] {s3.py:1422} INFO - Downloading source S3 file from Bucket mlops-3 with path datasets/california_housing.csv
+[2024-10-24T20:42:33.465+0000] {base.py:84} INFO - Using connection ID 's3_connection' for task execution.
+[2024-10-24T20:42:33.466+0000] {connection_wrapper.py:388} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-24T20:42:44.218+0000] {python.py:237} INFO - Done. Returned value was: {'start_time': 1729802557.3550835, 'end_time': 1729802557.417245, 'features': ['Unnamed: 0', 'MedInc', 'HouseAge', 'AveRooms', 'AveBedrms', 'Population', 'AveOccup', 'Latitude']}
+[2024-10-24T20:42:44.226+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-10-24T20:42:44.381+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=lapshin_nikita_linear_regression, task_id=prepare_data, run_id=manual__2024-10-24T20:42:14.357316+00:00, execution_date=20241024T204214, start_date=20241024T204233, end_date=20241024T204244
+[2024-10-24T20:42:44.577+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-10-24T20:42:44.841+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-24T20:42:44.847+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

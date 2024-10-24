@@ -1,0 +1,57 @@
+[2024-10-24T20:42:52.113+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-10-24T20:42:52.264+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: lapshin_nikita_linear_regression.train_model manual__2024-10-24T20:42:14.357316+00:00 [queued]>
+[2024-10-24T20:42:52.279+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: lapshin_nikita_linear_regression.train_model manual__2024-10-24T20:42:14.357316+00:00 [queued]>
+[2024-10-24T20:42:52.280+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 4
+[2024-10-24T20:42:52.313+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): train_model> on 2024-10-24 20:42:14.357316+00:00
+[2024-10-24T20:42:52.351+0000] {standard_task_runner.py:64} INFO - Started process 1712 to run task
+[2024-10-24T20:42:52.433+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'lapshin_nikita_linear_regression', 'train_model', 'manual__2024-10-24T20:42:14.357316+00:00', '--job-id', '182', '--raw', '--subdir', 'DAGS_FOLDER/HW2.py', '--cfg-path', '/tmp/tmpsziso42z']
+[2024-10-24T20:42:52.442+0000] {standard_task_runner.py:91} INFO - Job 182: Subtask train_model
+[2024-10-24T20:42:52.571+0000] {task_command.py:426} INFO - Running <TaskInstance: lapshin_nikita_linear_regression.train_model manual__2024-10-24T20:42:14.357316+00:00 [running]> on host 701639cb5e9f
+[2024-10-24T20:42:52.759+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Elizaveta Gavrilova' AIRFLOW_CTX_DAG_ID='lapshin_nikita_linear_regression' AIRFLOW_CTX_TASK_ID='train_model' AIRFLOW_CTX_EXECUTION_DATE='2024-10-24T20:42:14.357316+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-24T20:42:14.357316+00:00'
+[2024-10-24T20:42:52.761+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-10-24T20:42:52.860+0000] {s3.py:1422} INFO - Downloading source S3 file from Bucket mlops-3 with path datasets/prepared_data.csv
+[2024-10-24T20:42:52.874+0000] {base.py:84} INFO - Using connection ID 's3_connection' for task execution.
+[2024-10-24T20:42:52.876+0000] {connection_wrapper.py:388} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-24T20:42:58.717+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:42:58 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh(<full-path-to-git-executable>)
+
+All git commands will error until this is rectified.
+
+This initial message can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|silent|none|n|0: for no message or exception
+    - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+    - error|e|exception|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+[2024-10-24T20:43:08.332+0000] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2024-10-24T20:43:11.801+0000] {configprovider.py:957} INFO - Found endpoint for s3 via: environment_global.
+[2024-10-24T20:43:18.829+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:43:18 INFO mlflow.tracking._tracking_service.client: 🏃 View run linear_regression at: http://mlflow-service:5000/#/experiments/948380272125511270/runs/984377df6c1f4ef9a033bcdcfdf22b21.
+[2024-10-24T20:43:18.831+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:43:18 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://mlflow-service:5000/#/experiments/948380272125511270.
+[2024-10-24T20:43:18.841+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-10-24T20:43:18.843+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/HW2.py", line 121, in train_model
+    eval_results = mlflow.evaluate(
+  File "/home/airflow/.local/lib/python3.10/site-packages/mlflow/models/evaluation/base.py", line 1531, in evaluate
+    raise MlflowException(
+mlflow.exceptions.MlflowException: The model argument must be a string URI referring to an MLflow model, an MLflow Deployments endpoint URI, an instance of `mlflow.pyfunc.PyFuncModel`, a function, or None.
+[2024-10-24T20:43:18.865+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=lapshin_nikita_linear_regression, task_id=train_model, run_id=manual__2024-10-24T20:42:14.357316+00:00, execution_date=20241024T204214, start_date=20241024T204252, end_date=20241024T204318
+[2024-10-24T20:43:18.895+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 182 for task train_model (The model argument must be a string URI referring to an MLflow model, an MLflow Deployments endpoint URI, an instance of `mlflow.pyfunc.PyFuncModel`, a function, or None.; 1712)
+[2024-10-24T20:43:18.948+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-10-24T20:43:19.020+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-24T20:43:19.022+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

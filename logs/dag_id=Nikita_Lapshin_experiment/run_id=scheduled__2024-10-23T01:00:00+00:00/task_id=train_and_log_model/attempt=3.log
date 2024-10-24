@@ -1,0 +1,74 @@
+[2024-10-24T20:12:36.151+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-10-24T20:12:36.173+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Nikita_Lapshin_experiment.train_and_log_model scheduled__2024-10-23T01:00:00+00:00 [queued]>
+[2024-10-24T20:12:36.188+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Nikita_Lapshin_experiment.train_and_log_model scheduled__2024-10-23T01:00:00+00:00 [queued]>
+[2024-10-24T20:12:36.189+0000] {taskinstance.py:2306} INFO - Starting attempt 3 of 4
+[2024-10-24T20:12:36.211+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): train_and_log_model> on 2024-10-23 01:00:00+00:00
+[2024-10-24T20:12:36.251+0000] {standard_task_runner.py:64} INFO - Started process 215 to run task
+[2024-10-24T20:12:36.330+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Nikita_Lapshin_experiment', 'train_and_log_model', 'scheduled__2024-10-23T01:00:00+00:00', '--job-id', '163', '--raw', '--subdir', 'DAGS_FOLDER/HW2.py', '--cfg-path', '/tmp/tmpam7sgjx6']
+[2024-10-24T20:12:36.372+0000] {standard_task_runner.py:91} INFO - Job 163: Subtask train_and_log_model
+[2024-10-24T20:12:36.760+0000] {task_command.py:426} INFO - Running <TaskInstance: Nikita_Lapshin_experiment.train_and_log_model scheduled__2024-10-23T01:00:00+00:00 [running]> on host 701639cb5e9f
+[2024-10-24T20:12:37.318+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Lapshin Nikita' AIRFLOW_CTX_DAG_ID='Nikita_Lapshin_experiment' AIRFLOW_CTX_TASK_ID='train_and_log_model' AIRFLOW_CTX_EXECUTION_DATE='2024-10-23T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-23T01:00:00+00:00'
+[2024-10-24T20:12:37.328+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-10-24T20:12:37.445+0000] {s3.py:1422} INFO - Downloading source S3 file from Bucket mlops-2 with path datasets/prepared_data.csv
+[2024-10-24T20:12:37.496+0000] {base.py:84} INFO - Using connection ID 's3_connection' for task execution.
+[2024-10-24T20:12:37.499+0000] {connection_wrapper.py:388} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-24T20:12:45.819+0000] {logging_mixin.py:188} INFO - result1
+[2024-10-24T20:12:46.244+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:12:46 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh(<full-path-to-git-executable>)
+
+All git commands will error until this is rectified.
+
+This initial message can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|silent|none|n|0: for no message or exception
+    - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+    - error|e|exception|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+[2024-10-24T20:13:26.209+0000] {logging_mixin.py:188} INFO - result2 random_forest
+[2024-10-24T20:13:54.469+0000] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2024-10-24T20:16:34.184+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: storage.yandexcloud.net. Connection pool size: 10
+[2024-10-24T20:16:34.786+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: storage.yandexcloud.net. Connection pool size: 10
+[2024-10-24T20:16:40.947+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: storage.yandexcloud.net. Connection pool size: 10
+[2024-10-24T20:17:42.490+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: storage.yandexcloud.net. Connection pool size: 10
+[2024-10-24T20:17:42.860+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: storage.yandexcloud.net. Connection pool size: 10
+[2024-10-24T20:17:45.002+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: storage.yandexcloud.net. Connection pool size: 10
+[2024-10-24T20:17:47.598+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:17:47 INFO mlflow.models.evaluation.default_evaluator: Computing model predictions.
+[2024-10-24T20:17:48.318+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/sklearn/metrics/_regression.py:492 FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+[2024-10-24T20:17:48.329+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:17:48 INFO mlflow.models.evaluation.default_evaluator: Testing metrics on first row...
+[2024-10-24T20:17:48.332+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:17:48 WARNING mlflow.models.evaluation.default_evaluator: SHAP or matplotlib package is not installed, so model explainability insights will not be logged.
+[2024-10-24T20:19:08.127+0000] {logging_mixin.py:188} INFO - result3 random_forest
+[2024-10-24T20:19:08.219+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:19:08 INFO mlflow.tracking._tracking_service.client: 🏃 View run random_forest_run at: http://mlflow-service:5000/#/experiments/589296618587154829/runs/574a4c7701964683a066cf02904d7a42.
+[2024-10-24T20:19:08.221+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:19:08 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://mlflow-service:5000/#/experiments/589296618587154829.
+[2024-10-24T20:19:08.496+0000] {logging_mixin.py:188} INFO - result2 linear_regression
+[2024-10-24T20:19:11.564+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/_distutils_hack/__init__.py:18 UserWarning: Distutils was imported before Setuptools, but importing Setuptools also replaces the `distutils` module in `sys.modules`. This may lead to undesirable behaviors or errors. To avoid these issues, avoid using distutils directly, ensure that setuptools is installed in the traditional way (e.g. not an editable install), and/or make sure that setuptools is always imported before distutils.
+[2024-10-24T20:19:11.567+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/_distutils_hack/__init__.py:33 UserWarning: Setuptools is replacing distutils.
+[2024-10-24T20:19:20.999+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:19:20 INFO mlflow.models.evaluation.default_evaluator: Computing model predictions.
+[2024-10-24T20:19:21.130+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/sklearn/metrics/_regression.py:492 FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+[2024-10-24T20:19:21.164+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:19:21 INFO mlflow.models.evaluation.default_evaluator: Testing metrics on first row...
+[2024-10-24T20:19:21.175+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:19:21 WARNING mlflow.models.evaluation.default_evaluator: SHAP or matplotlib package is not installed, so model explainability insights will not be logged.
+[2024-10-24T20:19:21.960+0000] {logging_mixin.py:188} INFO - result3 linear_regression
+[2024-10-24T20:19:22.022+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:19:22 INFO mlflow.tracking._tracking_service.client: 🏃 View run linear_regression_run at: http://mlflow-service:5000/#/experiments/589296618587154829/runs/ce4252e23a0544de867ee06845c62996.
+[2024-10-24T20:19:22.027+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:19:22 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://mlflow-service:5000/#/experiments/589296618587154829.
+[2024-10-24T20:19:22.634+0000] {logging_mixin.py:188} INFO - result2 decision_tree
+[2024-10-24T20:19:26.848+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/_distutils_hack/__init__.py:18 UserWarning: Distutils was imported before Setuptools, but importing Setuptools also replaces the `distutils` module in `sys.modules`. This may lead to undesirable behaviors or errors. To avoid these issues, avoid using distutils directly, ensure that setuptools is installed in the traditional way (e.g. not an editable install), and/or make sure that setuptools is always imported before distutils.
+[2024-10-24T20:19:26.859+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/_distutils_hack/__init__.py:33 UserWarning: Setuptools is replacing distutils.
+[2024-10-24T20:19:55.606+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:19:55 INFO mlflow.models.evaluation.default_evaluator: Computing model predictions.
+[2024-10-24T20:19:55.657+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/sklearn/metrics/_regression.py:492 FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+[2024-10-24T20:19:55.677+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:19:55 INFO mlflow.models.evaluation.default_evaluator: Testing metrics on first row...
+[2024-10-24T20:19:55.680+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:19:55 WARNING mlflow.models.evaluation.default_evaluator: SHAP or matplotlib package is not installed, so model explainability insights will not be logged.
+[2024-10-24T20:20:05.525+0000] {logging_mixin.py:188} INFO - result3 decision_tree
+[2024-10-24T20:20:05.611+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:20:05 INFO mlflow.tracking._tracking_service.client: 🏃 View run decision_tree_run at: http://mlflow-service:5000/#/experiments/589296618587154829/runs/8959b839e1c8492f8873551bed0c1ba8.
+[2024-10-24T20:20:05.612+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:20:05 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://mlflow-service:5000/#/experiments/589296618587154829.
+[2024-10-24T20:20:05.648+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:20:05 INFO mlflow.tracking._tracking_service.client: 🏃 View run @GodSiemens at: http://mlflow-service:5000/#/experiments/589296618587154829/runs/5d746ed8f9604a749847757a556f19e1.
+[2024-10-24T20:20:05.648+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:20:05 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://mlflow-service:5000/#/experiments/589296618587154829.
+[2024-10-24T20:20:05.756+0000] {python.py:237} INFO - Done. Returned value was: {'random_forest': {'start_time': 1729800764.2668536, 'end_time': 1729801068.4181325, 'model_score': 0.9996373142315564}, 'linear_regression': {'start_time': 1729800764.2668536, 'end_time': 1729801161.362076, 'model_score': 0.8912486221145098}, 'decision_tree': {'start_time': 1729800764.2668536, 'end_time': 1729801195.7260053, 'model_score': 1.0}}
+[2024-10-24T20:20:05.763+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-10-24T20:20:06.012+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Nikita_Lapshin_experiment, task_id=train_and_log_model, run_id=scheduled__2024-10-23T01:00:00+00:00, execution_date=20241023T010000, start_date=20241024T201236, end_date=20241024T202006
+[2024-10-24T20:20:06.195+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-10-24T20:20:06.430+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-24T20:20:06.431+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,43 @@
+[2024-10-24T20:46:09.615+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-10-24T20:46:09.656+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: lapshin_nikita_linear_regression.train_model scheduled__2024-10-23T01:00:00+00:00 [queued]>
+[2024-10-24T20:46:09.667+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: lapshin_nikita_linear_regression.train_model scheduled__2024-10-23T01:00:00+00:00 [queued]>
+[2024-10-24T20:46:09.668+0000] {taskinstance.py:2306} INFO - Starting attempt 3 of 4
+[2024-10-24T20:46:09.686+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): train_model> on 2024-10-23 01:00:00+00:00
+[2024-10-24T20:46:09.736+0000] {standard_task_runner.py:64} INFO - Started process 2125 to run task
+[2024-10-24T20:46:09.737+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'lapshin_nikita_linear_regression', 'train_model', 'scheduled__2024-10-23T01:00:00+00:00', '--job-id', '189', '--raw', '--subdir', 'DAGS_FOLDER/HW2.py', '--cfg-path', '/tmp/tmpo05fpv5b']
+[2024-10-24T20:46:09.757+0000] {standard_task_runner.py:91} INFO - Job 189: Subtask train_model
+[2024-10-24T20:46:10.029+0000] {task_command.py:426} INFO - Running <TaskInstance: lapshin_nikita_linear_regression.train_model scheduled__2024-10-23T01:00:00+00:00 [running]> on host 701639cb5e9f
+[2024-10-24T20:46:10.461+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Elizaveta Gavrilova' AIRFLOW_CTX_DAG_ID='lapshin_nikita_linear_regression' AIRFLOW_CTX_TASK_ID='train_model' AIRFLOW_CTX_EXECUTION_DATE='2024-10-23T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-23T01:00:00+00:00'
+[2024-10-24T20:46:10.475+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-10-24T20:46:10.690+0000] {s3.py:1422} INFO - Downloading source S3 file from Bucket mlops-3 with path datasets/prepared_data.csv
+[2024-10-24T20:46:10.705+0000] {base.py:84} INFO - Using connection ID 's3_connection' for task execution.
+[2024-10-24T20:46:10.707+0000] {connection_wrapper.py:388} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-24T20:46:21.958+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:46:21 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh(<full-path-to-git-executable>)
+
+All git commands will error until this is rectified.
+
+This initial message can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|silent|none|n|0: for no message or exception
+    - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+    - error|e|exception|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+[2024-10-24T20:46:43.103+0000] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2024-10-24T20:46:51.152+0000] {configprovider.py:957} INFO - Found endpoint for s3 via: environment_global.
+[2024-10-24T20:47:01.295+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:47:01 INFO mlflow.models.evaluation.default_evaluator: Computing model predictions.
+[2024-10-24T20:47:01.348+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/sklearn/metrics/_regression.py:492 FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+[2024-10-24T20:47:01.357+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:47:01 INFO mlflow.models.evaluation.default_evaluator: Testing metrics on first row...
+[2024-10-24T20:47:01.361+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:47:01 WARNING mlflow.models.evaluation.default_evaluator: SHAP or matplotlib package is not installed, so model explainability insights will not be logged.
+[2024-10-24T20:47:04.543+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:47:04 INFO mlflow.tracking._tracking_service.client: 🏃 View run linear_regression_run at: http://mlflow-service:5000/#/experiments/405041356203365926/runs/74ea3f907f644d869bf1874847692d40.
+[2024-10-24T20:47:04.547+0000] {logging_mixin.py:188} WARNING - 2024/10/24 20:47:04 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://mlflow-service:5000/#/experiments/405041356203365926.
+[2024-10-24T20:47:04.826+0000] {python.py:237} INFO - Done. Returned value was: {'model_score': 0.8912486221145098}
+[2024-10-24T20:47:05.765+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-10-24T20:47:06.097+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=lapshin_nikita_linear_regression, task_id=train_model, run_id=scheduled__2024-10-23T01:00:00+00:00, execution_date=20241023T010000, start_date=20241024T204609, end_date=20241024T204706
+[2024-10-24T20:47:06.272+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-10-24T20:47:07.078+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
